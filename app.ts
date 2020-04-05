@@ -1,3 +1,5 @@
+import {hobbyRouter as hobbies} from "./routes/hobbies";
+
 var express = require('express');
 var bodyParser = require('body-parser');
 
@@ -20,3 +22,4 @@ app.use((req, res, next) => {
     next();
   });
 
+app.use('/hobbies',hobbies);
